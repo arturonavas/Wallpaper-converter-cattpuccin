@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#image-canvas {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#convert-button, #download-button {
+    margin-top: 20px;
+}
+
+#drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Image Converter</h1>
+    
+    <div id="drop-zone">
+        <input type="file" id="image-loader">
+    </div>
+
+    <canvas id="image-canvas"></canvas>
+
+    <button id="convert-button" onclick="convertImage()">Convert</button>
+    <button id="download-button" style="display:none;" onclick="downloadImage()">Download</button>
+
+    <div id="palette"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
